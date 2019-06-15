@@ -38,9 +38,12 @@ header a {
 /* Targeting the menu to make it horizontal */
 
 header li{
-    float: left;
+    /* float: left;
     display: inline;
-    padding: 0 20px 0 20px; /* Top, Right, Bottom, Left */
+    padding: 0 20px 0 20px; Top, Right, Bottom, Left */
+    display: inline-block;
+    font-size: 16px;
+    padding: 20px;
 }
 
 header #branding {
@@ -52,8 +55,12 @@ header #branding h1 {
 }
 
 header nav{
-    float: right;
-    margin-top: 10px;
+    /* float: right;
+    margin-top: 10px; */
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -138,9 +145,17 @@ justify-content: center;
     will-change: opacity, transform;
 }
 
-.social a:hover{
+/* .social a:hover{
     opacity: 1;
     transform: scale(1.25);
+} */
+
+#profilePic {
+    height: auto;
+    width: auto; 
+    max-width: 325px;
+    max-height: 325px;
+    border-radius: 50%;
 }
 
 @media(max-width: 768px){
